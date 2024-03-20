@@ -70,7 +70,7 @@ function stringToJson() {
 
 // Convert each entry into JSON format
 function cleanAndExtractData(entries) {
-    let allowedKeys = ["Name", "E-mail", "Course", "Mobile No", "City", "State", "Qualification"];
+    let allowedKeys = ["Name", "E-mail", "E-Mail", "Course", "Mobile No", "Contact No", "City", "State", "Qualification"];
     let jsonArray = [];
     entries.forEach((entry, index) => {
         // console.log(`Entry ${index}: ${entry}`);
