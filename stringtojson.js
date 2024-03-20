@@ -22,8 +22,8 @@ function trimAllLines(text) {
 
 
     // Use a regular expression to remove all text before the first occurrence of "Name:"
-    let filterText = text.replace(/[\s\S]*?(?=Name:)/, '');
-    
+    let filterText = text.replace(/[\s\S]*?(?=Name)/, '');
+
     // Split the text into lines
     let lines = filterText.split('\n');
     // console.log(lines);
@@ -70,7 +70,7 @@ function stringToJson() {
 
 // Convert each entry into JSON format
 function cleanAndExtractData(entries) {
-    let allowedKeys = ["Name", "E-mail", "E-Mail", "Course", "Mobile No", "Contact No", "City", "State", "Qualification"];
+    let allowedKeys = ["Name", "E-mail", "E-Mail", "Course", "Course intrested in", "Mobile No", "Contact No", "City", "State", "Qualification"];
     let jsonArray = [];
     entries.forEach((entry, index) => {
         // console.log(`Entry ${index}: ${entry}`);
@@ -103,7 +103,7 @@ function stringToJson() {
     // console.log(trimmedText);
 
     // Split the text into individual entries based on the separator "Name"
-    let entries = trimmedText.split(/\n(?=Name)/gm);    
+    let entries = trimmedText.split(/\n(?=Name)/gm);
     // console.log(entries);
 
     let extracted = cleanAndExtractData(entries);
@@ -116,11 +116,11 @@ function stringToJson() {
 }
 
 // For Updating Records
-function recordUpdate(length){
-    let div=document.getElementById("record");
+function recordUpdate(length) {
+    let div = document.getElementById("record");
     if (div.style.display === "none") {
         div.style.display = "block"; // Set display to the default value
     }
 
-    document.getElementById("record_count").innerText=length;
+    document.getElementById("record_count").innerText = length;
 }
