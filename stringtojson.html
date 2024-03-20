@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String to Json</title>
+    <script src="stringtojson.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      "
+    >
+      <textarea
+        id="raw"
+        rows="30"
+        cols="80"
+        placeholder="Enter text here..."
+        style="width: 40%; margin-right: 10px; height: 90vh"
+      >
+
+      Forwarded Conversation
+      Subject: CMC{New} Call me back
+      ------------------------
+      
+      
+      
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 4:22 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Amit Patel
+      E-mail: patelamit94709@gmail.com
+      Course: Deck Cadet Course
+      Mobile No:8881497354
+      City : Deoria Uttar pradesh
+      
+      
+      --
+      This e-mail was sent from 2imu® Marine Services Pvt. Ltd.
+      
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 6:14 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Viku Choudhary
+      E-mail: viku7689@gmail.com
+      Course: GP Rating
+      Mobile No:09004354115
+      City : Mumbai
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 6:20 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Nihal patkar
+      E-mail: nihalpatkar4@gmail.com
+      Course: After 10th Merchant Navy
+      Mobile No:7987072567
+      City : Jabalpur
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 6:49 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Eldarxcz
+      E-mail: a.le.k.sejstu.k.oru.k.o.v204.8@gmail.com
+      Course: Seamen
+      Mobile No:84341718212
+      City : Warsaw
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:11 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: AJAY KUMAWAT
+      E-mail: ajaykumawat24024@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:7073848549
+      City : LOSAL SIKAR
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:11 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Sabareeswaran
+      E-mail: kavinsabarik129@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:8973990742
+      City :
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:22 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Harshit H
+      E-mail: sangeetahaibatti@gmail.com
+      Course: Marine Course Admission
+      Mobile No:7618721193
+      City : Bidar karnataka
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:25 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Mayank
+      E-mail: mayanksharmasaloni@gmail.com
+      Course: Others
+      Mobile No:7500215227
+      City : Agra
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:31 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: RonaldDip
+      E-mail: an.g.el.ab.r.o.w.n.i.eb.ro.w.n.3@gmail.com
+      Course: Seamen
+      Mobile No:85289483925
+      City : Platteville
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:40 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Rahul
+      E-mail: rahul004300@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:6388748672
+      City : Ghazipur City
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:42 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 8:44 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Anjali yadav
+      E-mail: ay406495@gmail.com
+      Course: GP Rating
+      Mobile No:9369996177
+      City : Uttar Pradesh
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 9:31 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Josephguili
+      E-mail: lmrtjvuknxp@gmail.com
+      Course: GP Rating
+      Mobile No:86881273213
+      City : Jbeil
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 10:19 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: KETHAVATH ANILKUMAR
+      E-mail: kethavathanilkumar4@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:8074377802
+      City : Hyderabad
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 10:42 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Ashu
+      E-mail: manaksanky@gmail.com
+      Course: Join Merchant Navy
+      Mobile No:6230669817
+      City : Dharamshala
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 11:04 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Prashant pushkar
+      E-mail: raghwendramishra33@gmail.com
+      Course: Join Merchant Navy
+      Mobile No:9955334183
+      City : Motihari
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Fri, Feb 23, 2024 at 11:08 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Nitin mishra
+      E-mail: mishranitin0322@gmail.com
+      Course: GP Rating
+      Mobile No:08874787178
+      City : Pratapgarh
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 12:20 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Megandaync
+      E-mail: daoexjick@xrumer3.dynainbox.com
+      Course: After 12th Merchant Navy
+      Mobile No:82887719634
+      City : Walvis Bay
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 12:42 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Karan
+      E-mail: rg983058@gmail.com
+      Course: GP Rating
+      Mobile No:09250260751
+      City : Delhi
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 12:54 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: MeganWolla
+      E-mail: qxmskanib@xrumer3.dynainbox.com
+      Course: GME Course
+      Mobile No:88511787489
+      City : Walvis Bay
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 3:38 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Arif Hussain
+      E-mail: arifhussain18061988@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:9231907623
+      City : Kolkata
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 3:57 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: JimmyraT
+      E-mail: easowjslj@pcht23.com
+      Course: DME Course
+      Mobile No:81418978853
+      City : Banjul
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 4:33 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Sonal Sidar
+      E-mail: sonalsidar108@gmail.com
+      Course: Others
+      Mobile No:6261559742
+      City : Student
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:03 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: NEERAJ SHARMA
+      E-mail: neerajsharmaskd02@gmail.com
+      Course: Saloon Rating
+      Mobile No:7054684175
+      City : Chandauli
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:29 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: T.deepika
+      E-mail: st8806283@gmail.com
+      Course: B.Sc Nautical Science
+      Mobile No:9063196293
+      City : Ap
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:29 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:29 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 6:09 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Vivek thappa
+      E-mail: rajnishthappa@gmail.com
+      Course: After 10th Merchant Navy
+      Mobile No:6283026421
+      City : Pathankot
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:10 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: JimmyAnola
+      E-mail: aaojdszaz@pcht23.com
+      Course: DME Course
+      Mobile No:89486734544
+      City : Banjul
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:31 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Andrewdycle
+      E-mail: Andrewkic1993@xru.goaglie.com
+      Course: GME Course
+      Mobile No:86317275465
+      City : Вы ошибаетесь. Могу отстоять свою позицию. Пишите мне в PM, пообщаемся.
+       this may be relevant for small websites|resources|services}, but the problem appears when checking <a href=https://www.upwork.com/services/product/marketing-link-indexing-service-on-google-add-your-url-to-google-index-1590981834956689408>indexation google</a>.
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:45 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: SusanRow
+      E-mail: bbrpkypgm@xrumer1.dynainbox.com
+      Course: Join Merchant Navy
+      Mobile No:83747175824
+      City : Cairo
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 8:00 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Davidsii
+      E-mail: se.m.ec.zen.kod.avi.db.igm.a.n@gmail.com
+      Course: Naval Architecture
+      Mobile No:86671486178
+      City : Warsaw
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 8:07 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Robkoq
+      E-mail: robe.rtb.ro.w.n.moo.nma.ns@gmail.com
+      Course: Engine Cadet
+      Mobile No:84286722812
+      City : Lviv
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 8:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: MeganCed
+      E-mail: tmcleggyj@xrumer3.dynainbox.com
+      Course: Deck Cadet Course
+      Mobile No:85619146178
+      City : Walvis Bay
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 8:18 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Margaretodk
+      E-mail: m.ar.g.arelo.ve.t.r.ob.e.r.t.s@gmail.com
+      Course: B.Sc Nautical Science
+      Mobile No:88436441139
+      City : Lviv
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 9:24 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Mahak sharma
+      E-mail: mahaksharma6789@gmail.com
+      Course: Others
+      Mobile No:9256415599
+      City : Banswara rajsthan
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 9:30 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: MeganDrymn
+      E-mail: glvraocib@xrumer3.dynainbox.com
+      Course: DME Course
+      Mobile No:85843255448
+      City : Walvis Bay
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 10:02 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: RobertoAltew
+      E-mail: atnesepsudvp1borz6ktg@outlook.com
+      Course: Naval Architecture
+      Mobile No:81487249346
+      City : Hoskins
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 10:04 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: psyxi
+      E-mail: aasukrj@gmail.com
+      Course: Deck Cadet Course
+      Mobile No:84912413444
+      City : Contumacia cumulat poenam — прав. Упорство усугубляет наказание.
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 10:16 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Parmender
+      E-mail: sanjeevnehraa@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:9784508215
+      City : Sikar
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 11:07 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: AaronEsody
+      E-mail: m.attte.nl.ysh.l.ubel.y.@gmail.com
+      Course: Join Merchant Navy
+      Mobile No:83354132651
+      City : Monument
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 11:36 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Aaronver
+      E-mail: matt.t.e.nlys.h.lubel.y.@gmail.com
+      Course: Saloon Rating
+      Mobile No:88528387483
+      City : Silverton
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 12:09 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Asif Raza
+      E-mail: asif1226ar@gmail.com
+      Course: Diploma in Nautical Science
+      Mobile No:8603251902
+      City : Saraikela Kharsawan
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 12:41 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: VIKAS YADAV
+      E-mail: vy134266@gmail.com
+      Course: Diploma in Nautical Science
+      Mobile No:6393101700
+      City : Ayodhya
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 1:26 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Amos mathew
+      E-mail: amosmathew05@gmail.com
+      Course: Diploma in Nautical Science
+      Mobile No:8508836140
+      City : Trichy
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 2:14 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Aaronhib
+      E-mail: ma.tt.t.en.ly.s.h.lu.bely@gmail.com
+      Course: GME Course
+      Mobile No:84356981954
+      City : Sugar City
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 2:44 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Anshu Kumar
+      E-mail: kumaranshu02319@gmail.com
+      Course: B.Sc Nautical Science
+      Mobile No:7352062959
+      City : Patna
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 2:46 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Aarondum
+      E-mail: m.a.t.tt.enl.ysh.l.u.be.l.y@gmail.com
+      Course: Higher Diploma in Nautical Science
+      Mobile No:84234731855
+      City : Green Mountain Falls
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 3:09 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: muskan Lodha
+      E-mail: lodhakeerti1995@gmail.com
+      Course: Join Merchant Navy
+      Mobile No:07354126713
+      City : indore
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 3:47 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Antoniowxb
+      E-mail: 2612sup.ers.ervis.2.0.21@gmail.com
+      Course: Saloon Rating
+      Mobile No:81315552524
+      City : Minsk
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 4:08 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Andreaslgi
+      E-mail: a.q.uabu.rse.rv.i.ce.2.0.21@gmail.com
+      Course: Seamen
+      Mobile No:89837218628
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 4:20 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: StacyPhoto
+      E-mail: DeborahJes1971@xru.goaglie.com
+      Course: ETO Course
+      Mobile No:83759524526
+      City : Пожалуйста, объясните поподробнее
+       Удачно отучившись в ЮУрГУ на специального психолога, <a href=https://www.plan1.ru/balashiha/news/zachem-vashemu-rebenku-nujna-nyanya-osnovnyie-preimuschestva-i-polza-detskogo-uhoda-209887/>няня СПб</a> многие годы посвятила общении с детьми с проблемами в развитии и консультации родителей по проблемам воспитания малышей.
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 4:30 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Ambreesh shukla
+      E-mail: ambreeshshukla1514@gmail.com
+      Course: Join Merchant Navy
+      Mobile No:6263138829
+      City : Rewa
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 4:31 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Ronaldzes
+      E-mail: a.n.g.e.l.abrown.ie.br.ow.n.3.@gmail.com
+      Course: Others
+      Mobile No:88568453773
+      City : Kiowa
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:03 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: SusanCyday
+      E-mail: jasghgsuh@xrumer1.dynainbox.com
+      Course: Marine Course Admission
+      Mobile No:86318114556
+      City : Cairo
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:26 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Thomasbiash
+      E-mail: c.urt.balc.h2.022@gmail.com
+      Course: Sponsorship Exam
+      Mobile No:82386617628
+      City : Florence
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 5:46 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Alok  Anand
+      E-mail: sandilyaalokanand@gmail.com
+      Course: B.Tech Marine Engineering
+      Mobile No:9905845386
+      City : Bhagalpur
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 6:41 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Carmelabak
+      E-mail: da.v.i.dbrad.fo.r.d4.56.7@gmail.com
+      Course: B.Sc Ship Building &amp; Repair
+      Mobile No:87321795262
+      City : Vona
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:05 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Carmelasaw
+      E-mail: da.v.idb.ra.d.f.o.rd4567.@gmail.com
+      Course: Others
+      Mobile No:85774446533
+      City : Sterling
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:20 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Robloy
+      E-mail: ro.b.er.tb.r.o.wnmo.o.n.m.a.n.s@gmail.com
+      Course: B.Tech Marine Engineering
+      Mobile No:86167127576
+      City : Lviv
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:34 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: CarmeladuelE
+      E-mail: david.b.r.a.d.ford.4.567@gmail.com
+      Course: Seamen
+      Mobile No:89967956142
+      City : Black Hawk
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 7:57 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Amos Hembrom
+      E-mail: amoshembrom327@gmail.com
+      Course: Diploma in Nautical Science
+      Mobile No:73210 26775
+      City : Ranchi
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 8:16 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Mukesh thakur
+      E-mail: mukeshthakur68232@gmail.com
+      Course: IMU CET 2023
+      Mobile No:6299953055
+      City : KAIMUR (BHABUA)
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 10:07 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Robkyp
+      E-mail: ro.ber.t.s.t.o.lten.ber.gbi.g@gmail.com
+      Course: GME Course
+      Mobile No:86835385523
+      City : New York
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 10:11 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: CarmelaRed
+      E-mail: da.v.i.dbra.dfo.r.d45.6.7.@gmail.com
+      Course: B.Sc Nautical Science
+      Mobile No:88223638676
+      City : Wellington
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 11:08 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: magDoumDumsKal
+      E-mail: darbarritesh@rediffmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:83851113158
+      City : New York
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 11:21 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: AaronCek
+      E-mail: ma.tt.t.e.n.l.yshl.u.b.e.ly.@gmail.com
+      Course: Marine Course Admission
+      Mobile No:83355864487
+      City : Julesburg
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sat, Feb 24, 2024 at 11:49 PM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Anil Kumar
+      E-mail: kumar0anil9847@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:9317615450
+      City : Himachal Pradesh
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 12:32 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Hemant madankar
+      E-mail: hemantmadankar28@gmail.com
+      Course: After 10th Merchant Navy
+      Mobile No:8087927199
+      City : Nagpur
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 1:43 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Faiz Mohammad
+      E-mail: itzfaizmohd400@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:8299193804
+      City : Lucknow
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamciz
+      E-mail: qtugtcacpki@poochta.com
+      Course: GP Rating
+      Mobile No:83967652423
+      City : Moscow
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamled
+      E-mail: ktbmkbarfOl@poochta.com
+      Course: B.Tech Marine Engineering
+      Mobile No:84149143866
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamwralm
+      E-mail: izfkynnzpsa@poochta.com
+      Course: B.Sc Ship Building &amp; Repair
+      Mobile No:89796687218
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: WilliamNuh
+      E-mail: zsedjlfgeen@poochta.com
+      Course: Join Merchant Navy
+      Mobile No:88414818395
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamlig
+      E-mail: xypgwqtfeot@poochta.com
+      Course: After 12th Merchant Navy
+      Mobile No:82725832514
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: WilliamDus
+      E-mail: jwiomfbbgSl@poochta.com
+      Course: Deck Cadet
+      Mobile No:82274634184
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:50 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: WilliamMup
+      E-mail: lnzsdofsnOt@poochta.com
+      Course: Deck Cadet Course
+      Mobile No:88439216551
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:59 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamhic
+      E-mail: pqqobzmvlma@poochta.com
+      Course: Seamen
+      Mobile No:84572225748
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 2:59 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: WilliamSuida
+      E-mail: tqcnlidejpa@poochta.com
+      Course: Engine Cadet
+      Mobile No:83187575155
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 4:31 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: willea
+      E-mail: wil.l.ia.m.8.88.po.o.l.w.ay2.000.mail.box.u.s.@gmail.com
+      Course: B.Tech Marine Engineering
+      Mobile No:86813319623
+      City :
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 5:11 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Antoniogan
+      E-mail: 2.6.1.2.s.up.e.r.s.e.r.vi.s20.21@gmail.com
+      Course: B.Tech Marine Engineering
+      Mobile No:81627436686
+      City : Minsk
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 5:35 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Aaronbar
+      E-mail: ma.ttt.e.nl.ys.hlu.b.e.ly@gmail.com
+      Course: Marine Course Admission
+      Mobile No:86854665575
+      City : Holly
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 6:58 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Gagan
+      E-mail: vinithasubhas@gmail.com
+      Course: GP Rating
+      Mobile No:819748236
+      City : Manglore
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 7:00 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: RonaldPab
+      E-mail: ztkhesdyxja@gmail.com
+      Course: Deck Cadet Course
+      Mobile No:88531386492
+      City : Mosta
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 7:06 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Anup yadav
+      E-mail: yadavanup709188@gmail.com
+      Course: After 12th Merchant Navy
+      Mobile No:7667191140
+      City : Mirganj gopalganj bihar
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 7:19 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: CarmelaPhimi
+      E-mail: d.a.v.id.b.r.ad.fo.r.d.456.7.@gmail.com
+      Course: ETO Course
+      Mobile No:89831457342
+      City : Fountain
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 7:33 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Om prakash behera
+      E-mail: beheraomprakash134@gmail.com
+      Course: GP Rating
+      Mobile No:81448 85956
+      City : Puri
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 7:34 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: WilliamBes
+      E-mail: lifvuktpgea@poochta.com
+      Course: Others
+      Mobile No:85787784574
+      City : Moscow
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamgrads
+      E-mail: ciopnesgqPi@poochta.com
+      Course: GME Course
+      Mobile No:88322648966
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williampeene
+      E-mail: jcazpkunnMn@poochta.com
+      Course: Others
+      Mobile No:85872666929
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williampeary
+      E-mail: shfxwqmdqMi@poochta.com
+      Course: After 10th Merchant Navy
+      Mobile No:81497438299
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamhog
+      E-mail: speolhdnrKa@poochta.com
+      Course: Others
+      Mobile No:82675669413
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamfrigo
+      E-mail: vujogkhyeOt@poochta.com
+      Course: Higher Diploma in Nautical Science
+      Mobile No:88567919657
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamcam
+      E-mail: dheidxtpxon@poochta.com
+      Course: ETO Course
+      Mobile No:81438998677
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:17 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Williamcar
+      E-mail: lwbumlzzlpr@poochta.com
+      Course: Saloon Rating
+      Mobile No:84191865349
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:30 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Arul ruban
+      E-mail: jasthanislas1997@gmail.com
+      Course: Diploma in Nautical Science
+      Mobile No:6360625136
+      City : Chennai
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:54 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Arya Tiwari
+      E-mail: aryatiwari630@gmail.com
+      Course: Join Merchant Navy
+      Mobile No:9051781454
+      City : Kolkata
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 9:59 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Axon Biju
+      E-mail: axonbiju10@gmail.com
+      Course: Diploma in Nautical Science
+      Mobile No:8714423766
+      City : Kerala
+      
+      
+      ----------
+      From: WordPress <datacenter@2imu.com>
+      Date: Sun, Feb 25, 2024 at 10:24 AM
+      To: <2imudata2@gmail.com>
+      
+      
+      
+      Name: Shivam Singh
+      E-mail: singh2362000shivam@gmail.com
+      Course: GME Course
+      Mobile No:9305158467
+      City : Gopalganj
+      
+      
+      </textarea>
+      <div style="display: flex; flex-direction: column">
+        <button
+          type="button"
+          onclick="change()"
+          style="margin-right: 10px; margin-top: 10px"
+        >
+          Format
+        </button>
+        <div
+          id="record"
+          style="
+          display: none;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          "
+        >
+          <h3>Records Fetched&nbsp;:&nbsp;</h3>
+          <span id="record_count">45</span>
+        </div>
+
+        <button
+          type="button"
+          onclick="excel()"
+          style="margin-right: 10px; margin-top: 10px"
+        >
+          Download Excel
+        </button>
+      </div>
+      <textarea
+        id="formatted"
+        cols="80"
+        rows="30"
+        style="width: 40%; height: 90vh"
+      ></textarea>
+    </div>
+    <footer style="text-align: center; margin-top: 20px">
+      &copy; 2024 <a href="https://github.com/ashishkumar5338">Ashish Kumar</a>.
+      All rights reserved.
+    </footer>
+  </body>
+</html>
